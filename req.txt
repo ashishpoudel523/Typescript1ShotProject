@@ -1,5 +1,5 @@
 dependencies:
-npm i express cors 
+npm i express cors dotenv
 npm i @types/mongoose
 npm i multer
 npm i @types/multer
