@@ -1,0 +1,11 @@
+dependencies:
+npm i express cors 
+npm i @types/mongoose
+npm i multer
+npm i @types/multer
+npm i @types/express
+
+devDependencies:
+npm i -D typescript nodemon ts-node @types/node
+
+npx tsc --init
