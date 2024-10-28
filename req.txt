@@ -4,6 +4,8 @@ npm i @types/mongoose
 npm i multer
 npm i @types/multer
 npm i @types/express
+npm i http-errors
+npm i @types/http-errors
 
 devDependencies:
 npm i -D typescript nodemon ts-node @types/node

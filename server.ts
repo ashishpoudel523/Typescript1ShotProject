@@ -1,11 +1,13 @@
-import app from "../backend/src/app"
-import envConfig from "./src/config/config"
+import app from "../backend/src/app";
+import envConfig from "./src/config/config";
+import connectDatabase from "./src/config/db";
 
-const startServer = ()=>{
-    const port = envConfig.port || 3000
-    app.listen(envConfig.port, ()=>{
-        console.log(`server started at port ${port}`)
-    })
-}
+const startServer = async () => {
+  await connectDatabase();
+  const port = envConfig.port || 3000;
+  app.listen(port, () => {
+    console.log(`server started at port ${port}`);
+  });
+};
 
-startServer()
+startServer();
